@@ -46,6 +46,39 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+          <tr onmouseout="lssr_stop()" onmouseover="lssr_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/djgomp.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function lssr_start() {
+                  document.getElementById('lssr_image').style.opacity = "1";
+                }
+
+                function lssr_stop() {
+                  document.getElementById('lssr_image').style.opacity = "0";
+                }
+                lssr_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://www.science.org/doi/10.1126/scirobotics.abd7710">
+                <papertitle>Deep Learning Can Accelerate Grasp-Optimized Motion Planning</papertitle>
+              </a>
+              <br>
+              <a href="https://ichnow.ski/">Jeffrey Ichnowski</a>,
+              <strong>Yahav Avigal</strong>,
+              <a href="https://www.linkedin.com/in/vishal-satish">Vishal Satish</a>,
+              <a href="https://goldberg.berkeley.edu/">Ken Goldberg</a>
+              <br>
+              <em>Science Robotics </em>, Nov 2020  
+              <br>
+              <a href="https://www.science.org/doi/10.1126/scirobotics.abd7710">Paper</a>
+              <p></p>
+            </td>
+          </tr>
+
           <!--tr onmouseout="hypernerf_stop()" onmouseover="hypernerf_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
