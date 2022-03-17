@@ -47,46 +47,45 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-          <tr>
+          <tr onmouseout="gompst_stop()" onmouseover="gompst_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <img src='images/djgomp.jpeg' width="160">
+                <div class="two" id='gompst_image'><video  width=100% muted autoplay loop>
+                <source src="images/GOMP-ST.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/GOMP-ST.png' width="160">
               </div>
+              <script type="text/javascript">
+                function gompst_start() {
+                  document.getElementById('gompst_image').style.opacity = "1";
+                }
+
+                function gompst_stop() {
+                  document.getElementById('gompst_image').style.opacity = "0";
+                }
+                gompst_stop()
+              </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://www.science.org/doi/10.1126/scirobotics.abd7710">
-                <papertitle>Deep Learning Can Accelerate Grasp-Optimized Motion Planning</papertitle>
+              <a href="https://sites.google.com/view/gomp-st/">
+                <papertitle>GOMP-ST: Grasp-Optimized Motion Planning for Suction Transport</papertitle>
               </a>
               <br>
-              <a href="https://ichnow.ski/">Jeffrey Ichnowski</a>,
-              <strong>Yahav Avigal</strong>,
-              <a href="https://www.linkedin.com/in/vishal-satish">Vishal Satish</a>,
+              <strong>Yahav Avigal*</strong>,
+              <a href="https://ichnow.ski/">Jeffrey Ichnowski*</a>,
+              <a>Max Cao</a>,
               <a href="https://goldberg.berkeley.edu/">Ken Goldberg</a>
               <br>
-              <em>Science Robotics </em>, Nov 2020  
+              <em>Under Review </em>, 2022 
               <br>
-              <a href="https://goldberg.berkeley.edu/pubs/SR-DJ-GOMP-Nov-2020.pdf">Paper</a> /
-              <a href="https://berkeleyautomation.github.io/dj-gomp/">Website</a> 
-              <br>
-              <a href="https://news.berkeley.edu/2020/11/18/deep-learning-helps-robots-grasp-and-move-objects-with-ease/">Berkeley News</a> / 
-              <a href="https://www.newscientist.com/article/2260014-warehouse-robots-upgraded-to-make-packing-decisions-350-times-faster/">New Scientist</a> / 
-              <a href="https://techcrunch.com/2020/11/18/interlocking-ais-let-robots-pick-and-place-faster-than-ever/">TechCrunch</a> /
-              <a href="https://jp.techcrunch.com/2020/11/19/2020-11-18-interlocking-ais-let-robots-pick-and-place-faster-than-ever/">TC 日本</a> / 
-              <a href="https://www.thetimes.co.uk/article/holding-on-to-job-becomes-harder-as-robots-get-a-grip-mrkhp3nsm">The Times</a> /
-              <a href="https://finance.yahoo.com/news/interlocking-ais-let-robots-pick-190131191.html">Yahoo!</a> /
-              <a href="https://techxplore.com/news/2020-11-deep-robots-grasp-ease.html">Tech Xplore</a> /
-              <a href="https://www.miragenews.com/deep-learning-helps-robots-grasp-and-move-objects-with-ease/">Mirage</a> /
-              <a href="https://www.sciencedaily.com/releases/2020/11/201118141827.htm">ScienceDaily</a> /
-              <a href="https://cosmosmagazine.com/news/making-robots-useful-in-the-warehouse/">Cosmos</a> /
-              <a href="https://www.analyticsinsight.net/deep-learning-will-make-robots-grasp-and-move-objects-easily/">Analytics Insight</a> /
-              <a href="https://www.engineering.com/DesignSoftware/DesignSoftwareArticles/ArticleID/20996/Deep-Learning-Software-Accelerates-Robots-Ability-to-Grasp-and-Move-Objects.aspx">engineering.com</a> /
-              <a href="https://www.therobotreport.com/neural-networks-plus-motion-planning-equals-more-nimble-robots-uc-berkeley/">The Robot Report</a>
+              <a href="https://arxiv.org/abs/2203.08359">arXiv</a>
               <p></p>
             </td>
-          </tr>
+          </tr> 
 
           <tr onmouseout="gompfit_stop()" onmouseover="gompfit_start()">
-            <td style="padding:20px;padding-bottom:60px;width:25%;vertical-align:middle">
+            <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='gompfit_image'><video  width=100% muted autoplay loop>
                 <source src="images/GOMP-FIT.mp4" type="video/mp4">
@@ -122,7 +121,45 @@
               <a href="https://arxiv.org/abs/2110.15326">arXiv</a>
               <p></p>
             </td>
-          </tr> 
+          </tr>
+
+          <tr>
+            <td style="padding:20px;padding-bottom:60px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/djgomp.jpeg' width="160">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://www.science.org/doi/10.1126/scirobotics.abd7710">
+                <papertitle>Deep Learning Can Accelerate Grasp-Optimized Motion Planning</papertitle>
+              </a>
+              <br>
+              <a href="https://ichnow.ski/">Jeffrey Ichnowski</a>,
+              <strong>Yahav Avigal</strong>,
+              <a href="https://www.linkedin.com/in/vishal-satish">Vishal Satish</a>,
+              <a href="https://goldberg.berkeley.edu/">Ken Goldberg</a>
+              <br>
+              <em>Science Robotics </em>, Nov 2020  
+              <br>
+              <a href="https://goldberg.berkeley.edu/pubs/SR-DJ-GOMP-Nov-2020.pdf">Paper</a> /
+              <a href="https://berkeleyautomation.github.io/dj-gomp/">Website</a> 
+              <br>
+              <a href="https://news.berkeley.edu/2020/11/18/deep-learning-helps-robots-grasp-and-move-objects-with-ease/">Berkeley News</a> / 
+              <a href="https://www.newscientist.com/article/2260014-warehouse-robots-upgraded-to-make-packing-decisions-350-times-faster/">New Scientist</a> / 
+              <a href="https://techcrunch.com/2020/11/18/interlocking-ais-let-robots-pick-and-place-faster-than-ever/">TechCrunch</a> /
+              <a href="https://jp.techcrunch.com/2020/11/19/2020-11-18-interlocking-ais-let-robots-pick-and-place-faster-than-ever/">TC 日本</a> / 
+              <a href="https://www.thetimes.co.uk/article/holding-on-to-job-becomes-harder-as-robots-get-a-grip-mrkhp3nsm">The Times</a> /
+              <a href="https://finance.yahoo.com/news/interlocking-ais-let-robots-pick-190131191.html">Yahoo!</a> /
+              <a href="https://techxplore.com/news/2020-11-deep-robots-grasp-ease.html">Tech Xplore</a> /
+              <a href="https://www.miragenews.com/deep-learning-helps-robots-grasp-and-move-objects-with-ease/">Mirage</a> /
+              <a href="https://www.sciencedaily.com/releases/2020/11/201118141827.htm">ScienceDaily</a> /
+              <a href="https://cosmosmagazine.com/news/making-robots-useful-in-the-warehouse/">Cosmos</a> /
+              <a href="https://www.analyticsinsight.net/deep-learning-will-make-robots-grasp-and-move-objects-easily/">Analytics Insight</a> /
+              <a href="https://www.engineering.com/DesignSoftware/DesignSoftwareArticles/ArticleID/20996/Deep-Learning-Software-Accelerates-Robots-Ability-to-Grasp-and-Move-Objects.aspx">engineering.com</a> /
+              <a href="https://www.therobotreport.com/neural-networks-plus-motion-planning-equals-more-nimble-robots-uc-berkeley/">The Robot Report</a>
+              <p></p>
+            </td>
+          </tr>
 
         <!--/tbody></table>
 
