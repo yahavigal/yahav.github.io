@@ -129,3 +129,10 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+.subtitle::before {
+  background-color: red;
+  height: 20px;
+  display: table-row;
+  content: '';
+}
